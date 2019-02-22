@@ -23,4 +23,16 @@ public class RulesTest {
         assertThat(result2, equalTo(1));
         assertThat(result3, equalTo(3));
     }
+
+    @Test
+    public void winningOutcome() {
+        String result = newRules.winningOutcome(1);
+        String result2 = newRules.winningOutcome(2);
+        String result3 = newRules.winningOutcome(3);
+
+        assertThat(result, equalTo("Player Wins!"));
+        assertThat(result2, equalTo("Computer Wins!"));
+        assertThat(result3, equalTo("Tie!"));
+    }
 }
+

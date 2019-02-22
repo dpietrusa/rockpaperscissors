@@ -39,7 +39,28 @@ public class Rules {
             throwOutcome = 2;
         }
 
-
         return throwOutcome;
+    }
+
+
+    public String winningOutcome(int throwOutcome) {
+
+        String winnerOutcome = "";
+
+        switch (throwOutcome) {
+            case 1:
+                winnerOutcome = "Player Wins!";
+                break;
+
+            case 2:
+                winnerOutcome = "Computer Wins!";
+                break;
+
+            case 3:
+                winnerOutcome = "Tie!";
+                break;
+        }
+
+        return winnerOutcome;
     }
 }
